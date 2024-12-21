@@ -1,10 +1,7 @@
-package com.charity_hub.domain.contracts;
+import { Account } from "../models/account/account.model";
+import Device from "../models/device/device.model";
 
-import com.charity_hub.domain.models.account.Account;
-import com.charity_hub.domain.models.device.Device;
-
-public interface IJWTGenerator {
-    String generateAccessToken(Account account, Device device);
-
-    String generateRefreshToken(Account account, Device device);
+export interface IJWTGenerator {
+    generateAccessToken(account: Account, device: Device): string;
+    generateRefreshToken(account: Account, device: Device): string;
 }

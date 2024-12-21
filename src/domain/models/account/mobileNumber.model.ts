@@ -1,4 +1,4 @@
-import { ValueValidator } from "../validators/valueValidator.validator";
+import { ValueValidator } from "../../validators/valueValidator.validator";
 
 export default class MobileNumber {
   private static readonly MIN_LENGTH = 7;
